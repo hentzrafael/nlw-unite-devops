@@ -32,5 +32,7 @@ jobs:
     - name: Push image
       run: |
         docker push rafaelhentz172/nlw-unite-devops:${{ steps.generate_sha.outputs.sha}}
+        docker tag rafaelhentz172/nlw-unite-devops:${{ steps.generate_sha.outputs.sha}} rafaelhentz172/nlw-unite-devops:latest
+        docker push rafaelhentz172/nlw-unite-devops:latest
 
       
