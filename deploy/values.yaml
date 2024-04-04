@@ -2,7 +2,7 @@ replicaCount: 5
 image:
   repository: rafaelhentz172/nlw-unite-devops
   pullPolicy: Always
-  tag: 61ce407
+  tag: ec22111
   port: 3333
 imagePullSecrets: []
 nameOverride: ''
